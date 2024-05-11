@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './sidebar.module.css'
+import MenuLink from "./menuLink/menuLink";
 
 import {
   MdDashboard,
@@ -82,7 +83,14 @@ const Sidebar = () => {
     <div className={styles.container}>
       <ul>
         {menuItems.map(cat =>(
-          <li key={cat.title}>{cat.title}</li>
+          <li key={cat.title}>
+            <span className={styles.cat}>
+              {cat.title}
+            </span>
+            {cat.list.map(item => (
+              <MenuLink item={item} key={item.title} />
+            ))}
+            </li>
         ))}
       </ul>
     </div>
