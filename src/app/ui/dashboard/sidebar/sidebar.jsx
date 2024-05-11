@@ -80,6 +80,11 @@ const menuItems = [
 const Sidebar = () => {
   return (
     <div className={styles.container}>
+      <ul>
+        {menuItems.map(cat =>(
+          <li key={cat.title}>{cat.title}</li>
+        ))}
+      </ul>
     </div>
     
   )
