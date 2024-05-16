@@ -15,7 +15,7 @@ import {
   MdLogout,
 } from "react-icons/md";
 import Image from 'next/image';
-import { usePathname } from 'next/navigation';
+
 
 const menuItems = [
   {
