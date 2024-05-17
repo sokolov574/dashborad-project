@@ -1,10 +1,14 @@
-import React from 'react'
+'use client'
+
+import { usePathname } from 'next/navigation'
+import styles from './navbar.module.css'
 
 const Navbar = () => {
+
+  const pathname = usePathname()
+
   return (
-    <div>
-      <h1>Navbar</h1>
-    </div>
+    <div className={styles.container}></div>
   )
 }
 
