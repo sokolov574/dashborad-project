@@ -6,3 +6,15 @@
     align-items: center;
     justify-content: space-between;
 }
+
+.title {
+    color: var(--textSoft);
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  
+  .menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
